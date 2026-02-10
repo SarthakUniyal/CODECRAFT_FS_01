@@ -1,0 +1,437 @@
+.home-container, .auth-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.welcome-card, .auth-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.btn-primary, .btn-auth {
+    background: #4ecca3;
+    color: #1a1a2e;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-auth { width: 100%; }
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: white;
+}
+
+/* --- NEW DASHBOARD STYLES --- */
+
+.dashboard-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Soft blue/white radial gradient */
+    background: radial-gradient(circle at top right, #e0eaff, #ffffff); 
+    font-family: 'Poppins', sans-serif;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.7); /* Frosted glass look */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+    width: 90%;
+}
+
+.user-icon {
+    font-size: 40px;
+    background: #f0f4ff;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+}
+
+h1 {
+    color: #1a1a1a;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.description {
+    color: #666;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.btn-logout {
+    margin-top: 30px;
+    padding: 12px 45px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #fdfdfd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.welcome-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers items vertically */
+    align-items: center;     /* Centers items horizontally */
+    background: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    position: relative;      /* Required for absolute positioning of the button */
+    width: 100%;
+}
+
+/* --- NEW: Top-Right Login Button Styling --- */
+.top-nav {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+
+.login-nav-btn {
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.login-nav-btn:hover {
+    background: #f8f8f8;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.welcome-screen img {
+    width: 120px;
+}
+
+.welcome-screen h1 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.welcome-screen p {
+    font-size: 1.5rem;
+}
+
+.welcome-text {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+.welcome-screen button {
+    margin-top: 10px;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    background: white;
+    cursor: pointer;
+}
+
+/* Container - Pure White Background */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; 
+    font-family: 'Inter', sans-serif;
+    position: relative;
+}
+
+/* Container - Light Grey Background */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8fafc; 
+    font-family: 'Inter', sans-serif;
+}
+
+/* Elegant White Card with Soft Shadow */
+.auth-card {
+    background: #ffffff; /* Solid White */
+    padding: 60px 40px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    /* Subtle premium shadow */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.auth-card h2 {
+    color: #000000; /* Black Text */
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.auth-subtitle {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+/* Input Field Styling - White Background with Black Borders */
+.input-field {
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-bottom: 15px;
+    transition: all 0.2s ease;
+}
+
+.input-field:focus-within {
+    border-color: #000000;
+    box-shadow: 0 0 0 1px #000000;
+}
+
+.input-field .icon {
+    font-size: 16px;
+    margin-right: 12px;
+    opacity: 0.7;
+}
+
+.input-field input {
+    background: transparent;
+    border: none;
+    color: #000000;
+    padding: 16px 0;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Reset Password Link */
+.forgot-password {
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 25px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Solid Black Button on White Card */
+.auth-btn-black {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    background: #000000; /* Black Button */
+    color: #ffffff;      /* White Text */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-btn-black:hover {
+    background: #222222;
+}
+
+/* Bottom Toggle */
+.auth-toggle {
+    color: #64748b;
+    font-size: 13px;
+    margin-top: 30px;
+}
+
+.auth-toggle span {
+    color: blue;
+    cursor: pointer;
+    margin-left: 5px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* User Initial Icon */
+.user-initial-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #000; /* Black circle */
+    color: #fff; /* White letter */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Profile Dropdown Positioning */
+.profile-container {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 45px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    min-width: 120px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 100;
+    text-align: left;
+}
+
+.profile-dropdown p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+    padding: 5px 10px;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+}
+
+.logout-btn {
+    background: transparent;
+    border: none;
+    color: #555;
+    padding: 8px 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    color: #000;
+    background: #f5f5f5;
+}
+
+
+.profile-wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #000; /* Black background */
+    color: #fff; /* White letter */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logout-link {
+    background: none;
+    border: none;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.logout-link:hover {
+    color: red;
+}
+
+.forgot-password-container {
+    text-align: right;
+    margin: -10px 0 20px 0;
+}
+
+.premium-link {
+    color: #2563eb; /* Modern Blue */
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.premium-link:hover {
+    text-decoration: underline;
+    color: #1d4ed8;
+}
