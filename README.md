@@ -1,4 +1,4 @@
-# Premium MERN Authentication System
+# Secure User Authentication
 
 A professional, high-performance full-stack authentication system built with the MERN stack. This project features a premium monochrome UI, secure JWT-based sessions, and a real-time OTP (One-Time Password) system integrated with Gmail for secure password resets.
 
