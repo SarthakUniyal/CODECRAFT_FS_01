@@ -30,14 +30,18 @@ A professional, high-performance full-stack authentication system built with the
 ```text
 CODECRAFT_FS_01/
 ├── Client/                # React Vite Frontend
-│   ├── src/
-│   │   ├── components/    # ProtectedRoute, UI Elements
-│   │   ├── context/       # AuthContext for global state
-│   │   ├── pages/         # Home, Auth, ForgotPassword, Dashboard
-│   │   └── services/      # API communication logic
+│   ├── assets/            # Global CSS and Styles
+│   ├── components/        # ProtectedRoute, UI Elements
+│   ├── context/           # AuthContext for global state
+│   ├── pages/             # Home, Auth, ForgotPassword, Dashboard
+│   ├── public/            # Static assets (user.png, email.png, etc.)
+│   ├── services/          # API communication logic
+│   ├── App.jsx            # Main Application logic
+│   └── Main.jsx           # Entry point
 ├── Server/                # Node.js Backend
 │   ├── config/            # DB and Nodemailer configurations
 │   ├── controllers/       # Business logic for Auth & OTP
 │   ├── models/            # Mongoose User Schemas
-│   └── routes/            # Express API Endpoints
+│   ├── routes/            # Express API Endpoints
+│   └── server.js          # Main Entry point
 └── .env                   # Environment Variables
